@@ -1,0 +1,19 @@
+.item-1 {
+  background-color: #00b3ff;
+}
+
+.item-2 {
+  background-color: #0051ff;
+}
+
+.bod {
+  background-color: #40fef4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  row-gap: 25px;
+  column-gap: 25px;
+}
