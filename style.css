@@ -26,4 +26,6 @@
   display: grid;
   grid-template-columns: 200px 100px 300px;
   grid-template-rows: 100px 200px;
+  row-gap: 20px;
+  column-gap: 20px;
 }

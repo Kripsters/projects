@@ -1,0 +1,15 @@
+.item {
+  color: purple;
+  background-color: purple;
+}
+.bod {
+  background-color: pink;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 300px 300px;
+  row-gap: 50px;
+  column-gap: 100px;
+}
