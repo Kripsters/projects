@@ -1,0 +1,27 @@
+  *{
+    margin: 0px;
+  }
+  
+  .item-1 {
+background-color: red;
+font-size: 48px;
+color:whitesmoke;
+  }
+  
+  .item-2 {
+background-color: blue;
+font-size: 48px;
+color:whitesmoke;
+  }
+
+  .item-3 {
+background-color: green;
+font-size: 48px;
+color:whitesmoke;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    height:100vh;
+  }
