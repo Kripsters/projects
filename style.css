@@ -1,24 +1,37 @@
 html {
   /* :root arī der */
-  --krasa: rgb(31, 29, 182);
+
+  --margarins: 10vh;
+}
+
+html[data-theme="light"] {
+  --krasa: rgb(209, 209, 219);
+  --krasa2: rgb(255, 255, 255);
+  --fontcol: rgb(0, 0, 0);
+}
+
+html[data-theme="dark"] {
+  --krasa: rgb(36, 32, 34);
+  --krasa2: rgb(58, 52, 55);
+  --fontcol: rgb(255, 255, 255);
 }
 
 body {
-  --krasa: red;
+  margin: 0;
+  background-color: var(--krasa2);
+  color: var(--fontcol);
 }
 
-div {
-  --krasa: green;
+header {
+  width: 100vw;
+  height: var(--margarins);
+  background-color: var(--krasa);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
 }
 
-h1 {
-  color: var(--krasa);
-}
-
-p {
-  color: var(--krasa);
-}
-
-h2 {
-  color: var(--krasa);
+main {
+  margin-top: var(--margarins);
 }
