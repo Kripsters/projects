@@ -1,0 +1,31 @@
+.item-1 {
+  background-color: red;
+}
+
+.item-2 {
+  background-color: orange;
+}
+
+.item-3 {
+  background-color: yellow;
+}
+
+.item-4 {
+  background-color: green;
+}
+
+.item-5 {
+  background-color: rgb(65, 163, 255);
+}
+
+.item-6 {
+  background-color: darkblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 100px 300px;
+  grid-template-rows: 100px 200px;
+  row-gap: 20px;
+  column-gap: 20px;
+}

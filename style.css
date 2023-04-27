@@ -1,31 +1,24 @@
-.item-1 {
-  background-color: red;
+html {
+  /* :root arī der */
+  --krasa: rgb(31, 29, 182);
 }
 
-.item-2 {
-  background-color: orange;
+body {
+  --krasa: red;
 }
 
-.item-3 {
-  background-color: yellow;
+div {
+  --krasa: green;
 }
 
-.item-4 {
-  background-color: green;
+h1 {
+  color: var(--krasa);
 }
 
-.item-5 {
-  background-color: rgb(65, 163, 255);
+p {
+  color: var(--krasa);
 }
 
-.item-6 {
-  background-color: darkblue;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 200px 100px 300px;
-  grid-template-rows: 100px 200px;
-  row-gap: 20px;
-  column-gap: 20px;
+h2 {
+  color: var(--krasa);
 }
