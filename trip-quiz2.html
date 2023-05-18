@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="trip-quiz2.css" />
+    <script src="trip-quiz2.js" defer></script>
+    <title>Trip Quiz</title>
+  </head>
+  <body>
+    <header>
+      <nav style="margin-right: 2.5vw">
+        <input class="check" type="checkbox" id="kaste" />
+        <div class="burger">
+          <img src="ToggleOff.svg" alt="Menu" id="imghead" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Uz kuriem galamērķiem piedāvājam ceļojumus?</h1>
+      <article>
+        <div class="centerBox">
+          <div class="answerBox">
+            Austrālija
+            <input class="answerCheck" type="button" id="answ1" />
+          </div>
+
+          <div class="answerBox">
+            <input class="answerCheck" type="button" id="answ2" /> Roma
+          </div>
+
+          <div class="answerBox">
+            <input class="answerCheck" type="button" id="answ3" /> Indonēzija
+          </div>
+
+          <div class="answerBox">
+            <input class="answerCheck" type="button" id="answ4" /> Liepāja
+          </div>
+        </div>
+        <button class="checkAnswer" id="mybtn">Pārbaudīt</button>
+        <p id="isCorrect"></p>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,11 +1,12 @@
 # learn-css-grid
+
 Kapibara
 
 Es seit macos
 
 git init
-git pull *link*
-git remote add origin *link*
+git pull _link_
+git remote add origin _link_
 git branch -M main
 
 git add

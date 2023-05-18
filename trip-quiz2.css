@@ -1,0 +1,116 @@
+html {
+  /* :root arī der */
+  --margarins: 2cm;
+  --mainh: 3cm;
+  --fontSize: 25px;
+  font-family: sans-serif;
+}
+
+html[data-theme="light"] {
+  --krasa: rgb(249, 251, 231);
+  --krasa2: rgb(240, 237, 212);
+  --krasa3: rgb(236, 205, 180);
+  --fontcol: rgb(0, 0, 0);
+}
+
+html[data-theme="dark"] {
+  --krasa: rgb(12, 19, 79);
+  --krasa2: rgb(29, 38, 125);
+  --krasa3: rgb(92, 70, 156);
+  --fontcol: rgb(255, 255, 255);
+}
+
+.break {
+  height: 2vw;
+}
+
+header {
+  background-color: var(--krasa3);
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  width: 100vw;
+  height: var(--margarins);
+  display: grid;
+  justify-content: right;
+  align-content: right;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.centerBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 75vw;
+  height: 100%;
+}
+
+.check {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--krasa2);
+}
+
+p {
+  font-size: var(--fontSize);
+  color: var(--fontcol);
+}
+
+main {
+  margin-top: var(--mainh);
+  color: var(--fontcol);
+  margin-left: 5vw;
+}
+
+.answerBox {
+  display: flex;
+  height: 100px;
+  width: 384px;
+  background-color: var(--krasa);
+  border-radius: 25px;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.answerCheck {
+  height: 100px;
+  width: 384px;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.checkAnswer {
+  width: 260px;
+  height: 50px;
+  background-color: var(--krasa3);
+  border: none;
+  border-radius: 12.5px;
+  cursor: pointer;
+  font-size: var(--fontSize);
+  color: var(--fontcol);
+}
