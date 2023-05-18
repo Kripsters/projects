@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav style="margin-right: 2.5vw">
         <input class="check" type="checkbox" id="kaste" />
         <div class="burger">
           <img src="ToggleOff.svg" alt="Menu" id="imghead" />
@@ -19,7 +19,27 @@
     </header>
     <main>
       <h1>Uz kuriem galamērķiem piedāvājam ceļojumus?</h1>
-      <article class="center"></article>
+      <article>
+        <div class="centerBox">
+          <div class="answerBox">
+            <input class="answerCheck" type="checkbox" id="answ1" /> Austrālija
+          </div>
+
+          <div class="answerBox">
+            <input class="answerCheck" type="checkbox" id="answ2" /> Roma
+          </div>
+
+          <div class="answerBox">
+            <input class="answerCheck" type="checkbox" id="answ3" /> Indonēzija
+          </div>
+
+          <div class="answerBox">
+            <input class="answerCheck" type="checkbox" id="answ4" /> Liepāja
+          </div>
+        </div>
+        <button class="checkAnswer" id="mybtn">Pārbaudīt</button>
+        <p id="isCorrect"></p>
+      </article>
     </main>
   </body>
 </html>

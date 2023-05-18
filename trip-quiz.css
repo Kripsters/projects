@@ -1,7 +1,9 @@
 html {
   /* :root arī der */
-  --margarins: 10vh;
-  --mainh: 15vh;
+  --margarins: 2cm;
+  --mainh: 3cm;
+  --fontSize: 25px;
+  font-family: sans-serif;
 }
 
 html[data-theme="light"] {
@@ -38,7 +40,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.centerBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 article {
@@ -61,8 +70,43 @@ body {
   background-color: var(--krasa2);
 }
 
+p {
+  font-size: var(--fontSize);
+  color: var(--fontcol);
+}
+
 main {
   margin-top: var(--mainh);
   color: var(--fontcol);
   margin-left: 5vw;
+}
+
+.answerBox {
+  display: flex;
+  height: 100px;
+  width: 384px;
+  background-color: var(--krasa);
+  border-radius: 25px;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  align-items: center;
+  font-size: 32px;
+}
+
+.answerCheck {
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 25px;
+  width: 25px;
+}
+
+.checkAnswer {
+  width: 260px;
+  height: 50px;
+  background-color: var(--krasa3);
+  border: none;
+  border-radius: 12.5px;
+  cursor: pointer;
+  font-size: var(--fontSize);
+  color: var(--fontcol);
 }
