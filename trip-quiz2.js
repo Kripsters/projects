@@ -28,3 +28,26 @@ if (theme == "light" || !theme) {
 }
 
 toggleThemeHandler();
+
+
+function isCorrect(input, answid, form) {
+  console.log("func isCorrect start");
+
+  const foorm = document.getElementById(form);
+  let childrenEl = foorm.children;
+  Array.from(childrenEl).forEach(div => {
+    div.removeAttribute("onclick")
+    div.removeChild(div.firstElementChild)
+  })
+
+  if (input == "corr") {
+    document.getElementById(answid).setAttribute("class", 'correctBox')
+  } else {
+    document.getElementById(answid).setAttribute("class", 'incorrectBox')
+  }
+  console.log("func isCorrect end");
+}
+
+function test() {
+  console.log("a");
+}
