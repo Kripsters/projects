@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Kurš galamērķis atrodas uz 17 508 salām?",
+    "answers": ["Igaunija", "Lielbritānija", "Liepāja", "Indonēzija"],
+    "correctAnswer": "3"
+  },
+  {
+    "question": "Kurš galamērķis ir vienlaicīgi gan kontinents, gan valsts?",
+    "answers": ["Liepāja", "Austrālija", "Lietuva", "Kanāda"],
+    "correctAnswer": "1"
+  },
+  {
+    "question": "Pie kura galamērķa ir īpašī aizsargājama ūdensputnu ligzdošanas teritorija, kas iekļauta 'Natura 2000'?",
+    "answers": ["Lībija", "Ķīna", "Liepāja", "Čīle"],
+    "correctAnswer": "2"
+  }
+]
