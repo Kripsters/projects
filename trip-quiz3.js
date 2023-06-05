@@ -1,8 +1,9 @@
 const toggleTheme = document.getElementById("kaste");
+console.log("111");
 const html = document.getElementById("html");
 const bilde = document.getElementById("imghead");
 const mybutton = document.getElementById("mybtn");
-let qSkaits = 1;
+let formCount = 1;
 toggleTheme.addEventListener("change", toggleThemeHandler);
 
 
@@ -42,13 +43,14 @@ questions.forEach((q) => {
         
         let input = document.createElement("input");
         input.setAttribute("type", "radio");
-        input.setAttribute("name", "example");
+        input.setAttribute("name", formCount);
         input.setAttribute("value", r);
 
         label.textContent = r;
         label.appendChild(input);
         centerBox.appendChild(label);
     });
+    formCount++;
 });
 
 
@@ -57,7 +59,7 @@ for (let i = 1; i <= 3; i++) {
 
   visasAtbildes.forEach((atbilde) => {
     atbilde.addEventListener("click", () =>
-      checkHandler(visasPareizasAtb[i - 1], visasAtbildes)
+      checkHandler(visasPareizasAtb[i - 1], visasAtbildes)  
     );
   });
 }
