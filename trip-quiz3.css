@@ -24,10 +24,6 @@ html[data-theme="dark"] {
 }
 
 .break {
-  height: 10vw;
-}
-
-.topbreak {
   height: var(--mainh);
 }
 
@@ -179,9 +175,11 @@ label {
   cursor: pointer;
 }
 
+/*
 input[type="radio"] {
-  display: none;
+display:none;
 }
+*/
 
 @media (max-width: 950px) {
   .centerBox {
