@@ -1,0 +1,20 @@
+[
+  {
+    "animal": "Kaķis",
+    "description": "Patstāvīgs, bet uzticams.",
+    "answers": ["Murrā", "Spēlējas", "Guļ"],
+    "image": "cat.jpg"
+  },
+  {
+    "animal": "Suns",
+    "description": "Tu būsi viņa īstais un vienīgais.",
+    "answers": ["Rej", "Luncina asti", "Jāved ārā"],
+    "image": "dog.jpg"
+  },
+  {
+    "animal": "Trusis",
+    "description": "Vai esi gatavs Lieldienām katru dienu?",
+    "answers": ["Grauž", "Ēd sienu", "Lec"],
+    "image": "rabbit.jpg"
+  }
+]

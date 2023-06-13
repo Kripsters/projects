@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(1, 0, 33);
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+}
+
+article {
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(43, 104, 226);
+}
+
+img {
+  width: 100%;
+}
+
+.info {
+  padding-left: 15px;
+}
