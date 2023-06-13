@@ -3,8 +3,10 @@ console.log("111");
 const html = document.getElementById("html");
 const bilde = document.getElementById("imghead");
 const mybutton = document.getElementById("mybtn");
-let formCount = 1;
+let formCount = 0;
+let questCount = 0;
 toggleTheme.addEventListener("change", toggleThemeHandler);
+
 
 
 const response = await fetch("questions.json");
@@ -19,6 +21,9 @@ const htmlBreak = document.createElement("div");
 htmlBreak.setAttribute("class", "break");
 main.appendChild(htmlBreak);
 
+const visasAtbildes = document.getElementsByClassName("answerBox");
+console.log(visasAtbildes);
+
 questions.forEach((q) => {
 
     const form = document.createElement("form");
@@ -32,37 +37,47 @@ questions.forEach((q) => {
 
     const centerBox = document.createElement("div");
     form.appendChild(centerBox);
-    centerBox.setAttribute("class", "centerBox");
+    centerBox.className = "centerBox";
 
     const allAnswers = q.answers;
     console.log(allAnswers);
     
-    allAnswers.forEach((r) => {
+    allAnswers.forEach((r, index) => {
         const label = document.createElement("label");
-        label.setAttribute("class", "answerbox");
+        label.className = "answerBox";
         
         let input = document.createElement("input");
-        input.setAttribute("type", "radio");
-        input.setAttribute("name", formCount);
-        input.setAttribute("value", r);
+        input.type = "radio";
+        input.name = formCount;
+        input.value = index;
+        input.class = "answ";
+        input.id = questCount
+        input.addEventListener("click", () => checkHandler(input.name, input.value, input.id));
 
         label.textContent = r;
         label.appendChild(input);
         centerBox.appendChild(label);
+        questCount++;
     });
     formCount++;
 });
 
 
-for (let i = 1; i <= 3; i++) {
-  const visasAtbildes = document.getElementsByName(i);
 
-  visasAtbildes.forEach((atbilde) => {
-    atbilde.addEventListener("click", () =>
-      checkHandler(visasPareizasAtb[i - 1], visasAtbildes)  
-    );
-  });
+function checkHandler(quest, answ, qnum) {
+  const answer = document.getElementById(qnum);
+
+  if (answer.checked == true) {
+  if (answ == questions[quest].correctAnswer) {
+      answer.parentNode.style.backgroundColor = "green";
+  } else {
+      answer.parentNode.style.backgroundColor = "red";
+  }
+} else {
+  answer.parentNode.style.backgroundColor = "var(--krasa)";
 }
+}
+
 
 
 function toggleThemeHandler() {
@@ -77,6 +92,8 @@ function toggleThemeHandler() {
     bilde.setAttribute("src", "ToggleOff.svg");
   }
 }
+
+
 
 const theme = localStorage.getItem("theme");
 

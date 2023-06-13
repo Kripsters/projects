@@ -175,11 +175,11 @@ label {
   cursor: pointer;
 }
 
-/*
+
 input[type="radio"] {
 display:none;
 }
-*/
+
 
 @media (max-width: 950px) {
   .centerBox {

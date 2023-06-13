@@ -53,8 +53,8 @@ function checkHandler(correctAnswer, allAnswers) {
       } else {
         atbilde.parentNode.style.backgroundColor = "red";
       }
-    } else {
-      atbilde.parentNode.style.backgroundColor = "var(--krasa)";
-    }
+    } //else {
+    //  atbilde.parentNode.style.backgroundColor = "var(--krasa)";
+    //}
   });
 }
