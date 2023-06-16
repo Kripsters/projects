@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" id="html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="create.css" />
+  <script src="create.js" defer></script>
+  <title>Trip Quiz</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <input class="check" type="checkbox" id="kaste" />
+      <div class="burger">
+        <img src="ToggleOff.svg" alt="Menu" id="imghead" />
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe> -->
+    <div class="break">  </div>
+    <form action="/create.php" method="POST">
+      <label for="fname">Jautājums:</label><br>
+      <input type="text" id="jaut" name="jaut">
+
+      <div class="smallbreak"></div>
+
+      <label for="lname">Atbilde1:</label><br>
+      <input type="text" id="atb1" name="atb1"><br><br>
+
+
+      <label for="lname">Atbilde2:</label><br>
+      <input type="text" id="atb2" name="atb2"><br><br>
+
+
+      <label for="lname">Atbilde3:</label><br>
+      <input type="text" id="atb3" name="atb3"><br><br>
+
+
+      <label for="lname">Atbilde4:</label><br>
+      <input type="text" id="atb4" name="atb4">
+
+      <div class="break"></div>
+
+      <input type="submit" value="Submit">
+    </form> 
+  </main>
+</body>
+
+</html>
