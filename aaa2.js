@@ -24,6 +24,8 @@ const htmlBreak = document.createElement("div");
 htmlBreak.setAttribute("class", "break");
 main.appendChild(htmlBreak);
 
+const visasAtbildes = document.getElementsByClassName("answerBox");
+console.log(visasAtbildes);
 
 questions.forEach((q) => {
 

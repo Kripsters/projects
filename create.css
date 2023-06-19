@@ -191,7 +191,6 @@ main {
 label {
   background-color: var(--secondary-color);
   height: 60px;
-  cursor: pointer;
 }
 
 input[type="radio"] {

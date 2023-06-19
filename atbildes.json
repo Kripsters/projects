@@ -1,58 +1,32 @@
 [
     {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
+        "question": "jauta",
+        "answers": [
+            "atbi1",
+            "atbi2",
+            "atbi3",
+            "atbi4"
+        ],
+        "correctAnswer": "1"
     },
     {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
+        "question": "jauta",
+        "answers": [
+            "atbi1",
+            "atbi2",
+            "atbi3",
+            "atbi4"
+        ],
+        "correctAnswer": "3"
     },
     {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
-    },
-    {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
-    },
-    {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
-    },
-    {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
-    },
-    {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
-    },
-    {
-        "jaut": null,
-        "atb1": null,
-        "atb2": null,
-        "atb3": null,
-        "atb4": null
+        "question": "Labdien?",
+        "answers": [
+            "435g45g",
+            "herthetr",
+            "atbi3grjnhtjrjt",
+            "jtjtyfthgnht"
+        ],
+        "correctAnswer": "0"
     }
 ]
